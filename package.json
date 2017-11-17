@@ -1,0 +1,30 @@
+{
+  "name": "ajp",
+  "version": "0.0.0",
+  "description": "Advanced Java Programming",
+  "main": "app/index.html",
+  "scripts": {
+    "serve": "http-server -c-1 app/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cassshh/AJP.git"
+  },
+  "keywords": [
+    "Java",
+    "Spring",
+    "AngularJS",
+    "Mesozoic",
+    "Late Triassic",
+    "Late Jurassic"
+  ],
+  "author": "Cas van Dinter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cassshh/AJP/issues"
+  },
+  "homepage": "https://github.com/cassshh/AJP#readme",
+  "devDependencies": {
+    "http-server": "^0.10.0"
+  }
+}
