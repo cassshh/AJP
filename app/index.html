@@ -1,11 +1,31 @@
 <!doctype html>
-<html ng-app>
+<html ng-app="app">
+
 <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <!-- Angular Material style sheet -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.css">
+    <!-- Angular Material requires Angular.js Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-messages.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+    <!-- Angular Material Library -->
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="app.css">
 </head>
 
-<body>
-    <h1>AJP</h1>
+<body ng-cloak>
+    <md-toolbar class="md-accent">
+        <div class="md-toolbar-tools">
+            <h1 flex md-truncate>Tech<b>new</b>logy</h>
+        </div>
+    </md-toolbar>
+    <div class="content">
+        <h1>AJP</h1>
+    </div>
 </body>
 
 </html>
