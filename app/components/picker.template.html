@@ -1,0 +1,19 @@
+<div class="laptops-container">
+    <md-card class="laptop-container" ng-repeat="laptop in laptops">
+        <md-card-header>
+            <md-card-header-text>
+                <span class="md-title">{{laptop.name}}</span>
+            </md-card-header-text>
+        </md-card-header>
+        <img ng-src="{{'images/' + laptop.image}}" class="md-card-image" alt="Washed Out">
+        <md-card-title>
+            <md-card-title-text>
+                <span class="md-headline">€{{laptop.price}},-</span>
+                <span class="md-subhead">{{laptop.description}}</span>
+            </md-card-title-text>
+        </md-card-title>
+        <md-card-actions layout="row" layout-align="start">
+            <md-button>Bash it</md-button>
+        </md-card-actions>
+    </md-card>
+</div>

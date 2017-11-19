@@ -2,13 +2,33 @@
     padding: 0;
     margin: 0;
 }
-html, body {
+
+html,
+body {
     margin: 0 auto;
-    background-color: darkslategray;
+    background-color: rgb(64, 28, 56);
     color: lightgray;
     font-family: 'Roboto', sans-serif;
 }
+
 .content {
+    display: flex;
     margin: 0 auto;
     max-width: 80vw;
+    justify-content: center;
+}
+
+.laptops-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.laptop-container {
+    width: 300px;
+}
+
+.md-card-image {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
 }

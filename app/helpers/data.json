@@ -1,0 +1,106 @@
+[{
+        "name": "Apple Macintosh Original",
+        "description": "Stealthy as a whale",
+        "image": "apple_1.png",
+        "components": {
+            "display": [{
+                    "price": 0,
+                    "label": "Latest 9\" Monochrome 512x324"
+                },
+                {
+                    "price": 420,
+                    "label": "The future is now. 11\" Monochrome 768x512"
+                }
+            ],
+            "cpu": [{
+                    "price": 0,
+                    "label": "8 MHz type 68000 to get the job done"
+                },
+                {
+                    "price": 275,
+                    "label": "A spacetraveling 12MHz type i69"
+                }
+            ],
+            "ram": [{
+                    "price": 0,
+                    "label": "128k of RAM to handle every job"
+                },
+                {
+                    "price": 1337,
+                    "label": "Revolutionairy dedotated 512k wam fah teh hardcore gamers"
+                }
+            ]
+        },
+        "price": 2495
+    },
+    {
+        "name": "MS-DOS",
+        "description": "For the intelligent living creatures",
+        "image": "msdos_1.png",
+        "components": {
+            "display": [{
+                    "price": 0,
+                    "label": "Latest 9\" Monochrome 512x324"
+                },
+                {
+                    "price": 32,
+                    "label": "The future is now. 11\" Monochrome 768x512"
+                }
+            ],
+            "cpu": [{
+                    "price": 0,
+                    "label": "80386-SX 16MHz processor"
+                },
+                {
+                    "price": 10,
+                    "label": "Pentium class processor to rek erri apple"
+                }
+            ],
+            "ram": [{
+                    "price": 0,
+                    "label": "4 MB of memory more than ur mac in 2010"
+                },
+                {
+                    "price": 240,
+                    "label": "16 MB of memory than ur mac in 2100"
+                }
+            ]
+        },
+        "price": 175
+    },
+    {
+        "name": "Linux",
+        "description": "Ikea Hardware",
+        "image": "linux_1.png",
+        "components": {
+            "display": [{
+                    "price": 0,
+                    "label": "720p 240 degree"
+                },
+                {
+                    "price": 16,
+                    "label": "1080p 60fps memes"
+                }
+            ],
+            "cpu": [{
+                    "price": 0,
+                    "label": "Pls install urself"
+                },
+                {
+                    "price": 48,
+                    "label": "i9 Nuclear reactor"
+                }
+            ],
+            "ram": [{
+                    "price": 0,
+                    "label": "Do u even ram bro"
+                },
+                {
+                    "price": 128,
+                    "label": "Ramasaur"
+                }
+            ]
+        },
+        "price": 95
+    }
+]
