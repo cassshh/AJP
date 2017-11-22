@@ -23,7 +23,12 @@
 <body ng-controller="MainCtrl as m" ng-cloak>
     <md-toolbar class="md-accent">
         <div class="md-toolbar-tools">
-            <h1 flex md-truncate>Tech<b>new</b>logy</h>
+            <h1 flex md-truncate>Tech
+                <b>new</b>logy
+            </h1>
+            <md-button class="md-raised" ng-if="m.getLaptop()" aria-label="Clear" ng-click="m.clear()" style="background-color: rgb(64, 28, 56);color: rgb(216, 60, 105);">
+                Clear
+            </md-button>
         </div>
     </md-toolbar>
     <div class="content">
@@ -32,6 +37,7 @@
                 <laptop laptop="{{laptop}}" />
             </md-card>
         </div>
+        {{m.getLaptop()}}
     </div>
 </body>
 

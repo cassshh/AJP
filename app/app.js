@@ -11,6 +11,10 @@ app.controller('MainCtrl', function MainCtrl(LaptopFactory, MainService) {
 
     return {
 
+        clear: () => {
+            MainService.setLaptop(null);
+        },
+
         getLaptops: () => {
             return this.laptops;
         },
