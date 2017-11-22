@@ -16,7 +16,7 @@
     <script src="app.js"></script>
     <script src="helpers/LaptopFactory.js"></script>
     <script src="helpers/MainService.js"></script>
-    <script src="components/picker.component.js"></script>
+    <script src="components/laptop.component.js"></script>
     <link rel="stylesheet" href="app.css">
 </head>
 
@@ -27,9 +27,10 @@
         </div>
     </md-toolbar>
     <div class="content">
-        <picker></picker>
-        <div ng-if="m.getLaptop()">
-            <p>{{m.getLaptop()}}</p>
+        <div class="laptops-container">
+            <md-card class="laptop-container" ng-repeat="laptop in m.getLaptops()">
+                <laptop laptop="{{laptop}}" />
+            </md-card>
         </div>
     </div>
 </body>

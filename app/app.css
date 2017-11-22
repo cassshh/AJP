@@ -31,15 +31,10 @@ picker {
 
 .laptop-container {
     width: 300px;
+    text-align: center;
 }
 
-.md-card-image {
-    width: 200px;
+laptop .md-card-image {
     height: 200px;
     margin: 0 auto;
-}
-
-.config-laptop-container {
-    display: flex;
-    flex-direction: row;
 }
