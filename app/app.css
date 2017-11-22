@@ -19,6 +19,11 @@ body {
     justify-content: center;
 }
 
+picker {
+    margin: 0 auto;
+    flex-direction: row;
+}
+
 .laptops-container {
     display: flex;
     flex-direction: row;
