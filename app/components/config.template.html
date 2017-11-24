@@ -1,6 +1,7 @@
 <div layout="row" layout-align="space-between center">
     <span>{{$ctrl.key}}</span>
     <md-select ng-model="component" placeholder="{{$ctrl.key}}" class="md-no-underline">
-        <md-option ng-repeat="(key, val) in $ctrl.config" value="{{key}}"><b>{{val.label}}</b> - ${{val.price}}</md-option>
+        <md-option ng-repeat="(key, val) in $ctrl.config" value="{{key}}">
+            <b>{{val.label}}</b> - ${{val.price}}</md-option>
     </md-select>
 </div>

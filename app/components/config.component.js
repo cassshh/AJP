@@ -4,7 +4,7 @@ angular.module('app')
         templateUrl: 'components/config.template.html',
         controller: function ConfigController(MainService, $scope) {
             $scope.$watch('component', (newVal) => {
-                if(!newVal) return;
+                if (!newVal) return;
                 MainService.setComponent(this.key, newVal);
             });
         },

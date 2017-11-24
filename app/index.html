@@ -24,7 +24,7 @@
 <body ng-controller="MainCtrl as m" ng-cloak>
     <md-toolbar class="md-accent">
         <div class="md-toolbar-tools">
-            <h1 flex md-truncate>Tech <b>new</b>logy</h1>
+            <h1 flex md-truncate>Tech<b>new</b>logy</h1>
             <md-button class="md-raised" ng-if="m.getLaptop()" aria-label="Clear" ng-click="m.clear()" style="background-color: rgb(64, 28, 56);color: rgb(216, 60, 105);">
                 <b>Clear</b>
             </md-button>
@@ -32,13 +32,13 @@
     </md-toolbar>
     <div class="content">
         <div class="laptops-container">
-            <md-card class="laptop-container" ng-repeat="laptop in m.getLaptops()" ng-show="!m.getLaptop() || m.getLaptop() === laptop" >
+            <md-card class="laptop-container" ng-repeat="laptop in m.getLaptops()" ng-show="!m.getLaptop() || m.getLaptop() === laptop">
                 <laptop laptop="laptop" />
             </md-card>
         </div>
         <div class="configs-container" ng-if="m.getLaptop()">
             <md-card class="config-container" ng-repeat="(key, component) in m.getLaptop().components">
-                <config key="key" config="component"/>
+                <config key="key" config="component" />
             </md-card>
         </div>
     </div>

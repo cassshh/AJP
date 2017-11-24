@@ -16,7 +16,17 @@ angular.module('app')
             },
 
             setComponent: (key, val) => {
-                console.log(key, val);
+                for (let component in this.laptop.components) {
+                    if (key == component) {
+                        for (let c in this.laptop.components[component]) {
+                            if (val == c) {
+                                this.laptop.components[component][c].selected = true;
+                            } else {
+                                delete this.laptop.components[component][c].selected;
+                            }
+                        }
+                    }
+                };
             }
         }
 
