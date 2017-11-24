@@ -13,6 +13,10 @@ angular.module('app')
 
             getLaptop: () => {
                 return this.laptop;
+            },
+
+            setComponent: (key, val) => {
+                console.log(key, val);
             }
         }
 

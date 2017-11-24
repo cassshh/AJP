@@ -40,11 +40,11 @@
         "components": {
             "display": [{
                     "price": 0,
-                    "label": "Latest 9\" Monochrome 512x324"
+                    "label": "Latest 13\" RGB 512x324"
                 },
                 {
                     "price": 32,
-                    "label": "The future is now. 11\" Monochrome 768x512"
+                    "label": "The future is now. 15\" Monochrome 1366x768"
                 }
             ],
             "cpu": [{

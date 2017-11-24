@@ -16,25 +16,25 @@ body {
     flex-direction: column;
     margin: 0 auto;
     max-width: 80vw;
-    justify-content: center;
-}
-
-picker {
-    margin: 0 auto;
-    flex-direction: row;
 }
 
 .laptops-container {
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 .laptop-container {
-    width: 300px;
+    display: flex;
+    width: 100%;
     text-align: center;
 }
 
 laptop .md-card-image {
     height: 200px;
-    margin: 0 auto;
+}
+
+config {
+    margin-left: 32px;
+    margin-right: 32px;
 }
