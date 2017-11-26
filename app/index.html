@@ -18,6 +18,7 @@
     <script src="helpers/MainService.js"></script>
     <script src="components/laptop.component.js"></script>
     <script src="components/config.component.js"></script>
+    <script src="components/user.component.js"></script>
     <link rel="stylesheet" href="app.css">
 </head>
 
@@ -39,6 +40,11 @@
         <div class="configs-container" ng-if="m.getLaptop()">
             <md-card class="config-container" ng-repeat="(key, component) in m.getLaptop().components">
                 <config key="key" config="component" />
+            </md-card>
+        </div>
+        <div class="configs-container" ng-if="m.getLaptop()">
+            <md-card class="user-container">
+                <user user="m.getUser()" />
             </md-card>
         </div>
     </div>

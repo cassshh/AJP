@@ -2,8 +2,8 @@
 angular.module('app')
     .service('MainService', function () {
 
-        let laptop = null;
-        let config = false;
+        this.laptop = null;
+        this.user = {};
 
         return {
             setLaptop: (l) => {
@@ -27,6 +27,10 @@ angular.module('app')
                         }
                     }
                 };
+            },
+
+            getUser: () => {
+                return this.user;
             }
         }
 

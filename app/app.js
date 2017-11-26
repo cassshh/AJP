@@ -21,6 +21,10 @@ app.controller('MainCtrl', function MainCtrl(LaptopFactory, MainService) {
 
         getLaptop: () => {
             return MainService.getLaptop();
+        },
+
+        getUser: () => {
+            return MainService.getUser();
         }
     }
 });

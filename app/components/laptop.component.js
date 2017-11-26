@@ -2,7 +2,7 @@
 angular.module('app')
     .component('laptop', {
         templateUrl: 'components/laptop.template.html',
-        controller: function LaptopController(MainService, $scope, $attrs) {
+        controller: function LaptopController(MainService) {
 
             this.getLaptop = () => {
                 return MainService.getLaptop();
