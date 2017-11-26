@@ -1,0 +1,23 @@
+<md-card-title>
+    <md-card-title-text>
+        <span class="md-headline">{{$ctrl.laptop.name}} // €{{$ctrl.laptop.price}},-</span>
+        <span class="md-subhead">{{$ctrl.laptop.description}}</span>
+        <span ng-repeat="(item, component) in $ctrl.laptop.components">
+            <span>{{item}} - <b>{{$ctrl.getComponent(component).label}}</b> // <i>${{$ctrl.getComponent(component).price}}</i></span>
+        </span>
+        <br/>
+        <span ng-repeat="(key, value) in $ctrl.user">
+            <span>{{key}}: <b>{{value}}</b></span>
+        </span>
+        <br/>
+        <span>Total: ${{$ctrl.getTotal($ctrl.laptop)}}</span>
+    </md-card-title-text>
+    <md-card-title-media>
+        <div class="md-media-lg card-media">
+            <img ng-src="{{'images/' + $ctrl.laptop.image}}" class="md-media-lg card-media" alt="Washed Out">
+        </div>
+    </md-card-title-media>
+</md-card-title>
+<md-card-actions layout="row" layout-align="end center">
+    <md-button>Sell to slavery</md-button>
+</md-card-actions>

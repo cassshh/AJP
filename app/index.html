@@ -19,6 +19,7 @@
     <script src="components/laptop.component.js"></script>
     <script src="components/config.component.js"></script>
     <script src="components/user.component.js"></script>
+    <script src="components/overview.component.js"></script>
     <link rel="stylesheet" href="app.css">
 </head>
 
@@ -45,6 +46,11 @@
         <div class="configs-container" ng-if="m.getLaptop()">
             <md-card class="user-container">
                 <user user="m.getUser()" />
+            </md-card>
+        </div>
+        <div class="overview-container" ng-if="m.getLaptop() && m.getUser()">
+            <md-card class="overview-container">
+                <overview laptop="m.getLaptop()" user="m.getUser()" />
             </md-card>
         </div>
     </div>
