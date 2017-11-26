@@ -1,6 +1,7 @@
 'use strict';
 const app = angular.module('app', [
-    'ngMaterial'
+    'ngMaterial',
+    'ngMessages'
 ]);
 
 app.controller('MainCtrl', function MainCtrl(LaptopFactory, MainService) {
