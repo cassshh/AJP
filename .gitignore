@@ -1,3 +1,4 @@
-/node_modules
-/bower_components
+**/node_modules
+**/bower_components
+**/.idea
 /tech_of_the_future
