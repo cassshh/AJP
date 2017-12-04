@@ -5,9 +5,25 @@ Minor Advanced Java Programming.
 
 ## Frontend
 Run
-`npm run serve`
+`
+$ npm run serve
+`
 
 
 ## Backend
 Run
-`mvn tomcat7:run`
+`
+$ mvn tomcat7:run
+`
+
+
+## Database
+Run the database (mysql/phpymyadmin) within the *docker* dir
+`
+$ docker-compose up -d --build mysql phpmyadmin
+`
+
+Stop
+`
+$ docker-compose down
+`
