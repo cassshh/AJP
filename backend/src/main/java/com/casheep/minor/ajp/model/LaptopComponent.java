@@ -7,9 +7,6 @@ public class LaptopComponent {
     private String name;
     private List<ComponentItem> items;
 
-    public LaptopComponent() {
-    }
-
     public LaptopComponent(String name, List<ComponentItem> items) {
         this.name = name;
         this.items = items;

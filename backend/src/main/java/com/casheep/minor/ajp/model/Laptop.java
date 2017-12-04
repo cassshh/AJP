@@ -11,9 +11,6 @@ public class Laptop {
     private long price;
     private List<LaptopComponent> components;
 
-    public Laptop() {
-    }
-
     public Laptop(long id, String name, String description, String image, long price, List<LaptopComponent> components) {
         this.id = id;
         this.name = name;

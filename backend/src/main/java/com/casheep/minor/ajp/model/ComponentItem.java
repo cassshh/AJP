@@ -5,9 +5,6 @@ public class ComponentItem {
     private long price;
     private String label;
 
-    public ComponentItem() {
-    }
-
     public ComponentItem(long price, String label) {
         this.price = price;
         this.label = label;
