@@ -21,9 +21,6 @@ public class LaptopController {
     @RequestMapping(value = "/laptop", method = RequestMethod.GET)
     public ResponseEntity<List<Laptop>> listLaptops() {
         List<Laptop> laptops = laptopService.getLaptops();
-        if (laptops.isEmpty()) {
-            return new ResponseEntity<List<Laptop>>(HttpStatus.NO_CONTENT);
-        }
         return new ResponseEntity<List<Laptop>>(laptops, HttpStatus.OK);
     }
 
@@ -31,7 +28,7 @@ public class LaptopController {
     public ResponseEntity<Laptop> listLaptop(@PathVariable long id) {
         Laptop laptop = laptopService.getLaptop(id);
         if (laptop == null) {
-            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
         return new ResponseEntity<>(laptop, HttpStatus.OK);
     }
