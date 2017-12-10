@@ -13,24 +13,31 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
+@RequestMapping(value = "api/v1/")
 public class LaptopController {
 
     @Autowired
-    LaptopService laptopService;
+    LaptopService laptopServiceImpl;
 
-    @RequestMapping(value = "/laptop", method = RequestMethod.GET)
+    @RequestMapping(value = "laptops", method = RequestMethod.GET)
     public ResponseEntity<List<Laptop>> listLaptops() {
-        List<Laptop> laptops = laptopService.getLaptops();
-        return new ResponseEntity<List<Laptop>>(laptops, HttpStatus.OK);
+        List<Laptop> laptops = laptopServiceImpl.getLaptops();
+        return new ResponseEntity<>(laptops, HttpStatus.OK);
     }
 
-    @RequestMapping(value = "/laptop/{id}", method = RequestMethod.GET)
+    @RequestMapping(value = "laptops/{id}", method = RequestMethod.GET)
     public ResponseEntity<Laptop> listLaptop(@PathVariable long id) {
-        Laptop laptop = laptopService.getLaptop(id);
+        Laptop laptop = laptopServiceImpl.getLaptop(id);
         if (laptop == null) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
         return new ResponseEntity<>(laptop, HttpStatus.OK);
+    }
+
+    @RequestMapping(value = "laptops/init")
+    public ResponseEntity<?> init() {
+        laptopServiceImpl.add(laptopServiceImpl.getDemoLaptops());
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 
 }

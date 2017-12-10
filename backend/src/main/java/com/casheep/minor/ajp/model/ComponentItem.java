@@ -1,9 +1,24 @@
 package com.casheep.minor.ajp.model;
 
-public class ComponentItem {
+import javax.persistence.*;
+import java.io.Serializable;
 
+@Entity
+@Table(name = "ComponentItems")
+public class ComponentItem implements Serializable {
+
+    @Id
+    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     private long price;
     private String label;
+
+    @ManyToOne
+    private LaptopComponent component;
+
+    public ComponentItem() {
+    }
 
     public ComponentItem(long price, String label) {
         this.price = price;
