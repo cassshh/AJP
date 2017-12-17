@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.Collection;
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class LaptopServiceImpl implements LaptopService {
@@ -20,8 +19,7 @@ public class LaptopServiceImpl implements LaptopService {
     @Override
     public List<Laptop> getDemoLaptops() {
         return List.of(
-                new Laptop(0,
-                        "Apple Macintosh Original",
+                new Laptop("Apple Macintosh Original",
                         "Stealthy as a whale",
                         "apple_1.png",
                         2495L,
@@ -42,8 +40,7 @@ public class LaptopServiceImpl implements LaptopService {
                                                 new ComponentItem(1337L, "Revolutionairy dedotated 512k wam fah teh hardcore gamers")
                                         ))
                         )),
-                new Laptop(1,
-                        "MS-DOS",
+                new Laptop("MS-DOS",
                         "For the intelligent living creatures",
                         "msdos_1.png",
                         175L,
@@ -64,8 +61,7 @@ public class LaptopServiceImpl implements LaptopService {
                                                 new ComponentItem(240L, "16 MB of memory than ur mac in 2100")
                                         ))
                         )),
-                new Laptop(2,
-                        "Linux",
+                new Laptop("Linux",
                         "Ikea Hardware",
                         "linux_1.png",
                         95L,

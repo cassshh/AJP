@@ -37,7 +37,7 @@ public class LaptopController {
     @RequestMapping(value = "laptops/init")
     public ResponseEntity<?> init() {
         laptopServiceImpl.add(laptopServiceImpl.getDemoLaptops());
-        return new ResponseEntity<>(HttpStatus.OK);
+        return new ResponseEntity<>(HttpStatus.CREATED);
     }
 
 }

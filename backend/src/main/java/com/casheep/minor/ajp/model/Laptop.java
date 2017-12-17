@@ -28,6 +28,14 @@ public class Laptop implements Serializable {
     public Laptop() {
     }
 
+    public Laptop(String name, String description, String image, long price, List<LaptopComponent> components) {
+        this.name = name;
+        this.description = description;
+        this.image = image;
+        this.price = price;
+        this.components = components;
+    }
+
     public Laptop(long id, String name, String description, String image, long price, List<LaptopComponent> components) {
         this.id = id;
         this.name = name;
