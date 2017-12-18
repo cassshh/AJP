@@ -1,5 +1,10 @@
 version: '2.1'
 services:
+  activemq:
+    image: rmohr/activemq
+    ports:
+    - '61617:61616'
+    - '8161:8161'
   mysql:
     image: mysql:5.7.15
     environment:
